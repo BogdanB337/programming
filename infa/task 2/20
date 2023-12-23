@@ -1,0 +1,10 @@
+def retro(arr):
+    for i in range(1, len(arr)):
+        if arr[i - 1] >= arr[i]:
+            return False
+    return True
+numbers = [2, 7, 33, 2, 55]
+if retro(numbers):
+    print('it is')
+else:
+    print('its not')

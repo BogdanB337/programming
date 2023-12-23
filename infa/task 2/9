@@ -1,0 +1,8 @@
+def destroy_ur_enemies(names_array, enemies_array):
+    return [name for name in names_array if name not in enemies_array]
+
+names = ["paul", "lev", "tony", "bogdan", "nikita", "lukka", "harry", "volandemort"]
+enemies = ["tony", "bogdan", "volandemort", "lev"]
+
+perfect_names = destroy_ur_enemies(names, enemies)
+print(perfect_names)

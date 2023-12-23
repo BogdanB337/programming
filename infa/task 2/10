@@ -1,0 +1,9 @@
+def kar(x, y):
+    z = list(zip(x, y))
+    return z
+
+x = [17, 0, 76, 23748234]
+y = [9.6, 56784, 9]
+
+result = kar(x, y)
+print(result)

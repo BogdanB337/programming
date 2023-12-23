@@ -1,0 +1,10 @@
+def reverse(a):
+    res = ''
+    for rek in a:
+        if rek.istitle() == True:
+            res = rek.lower() + res 
+        else:
+            res = rek.upper() + res 
+    print(res)
+    return res 
+reverse('DFGGfggjSDFDF')

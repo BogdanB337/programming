@@ -1,0 +1,6 @@
+def over21(card_values):
+    return sum(card_values) > 21
+card_str = input("напечатай очки карт: ")
+cards = [int(card) for card in card_str.split()]
+result = over21(cards)
+print(result)

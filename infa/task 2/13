@@ -1,0 +1,20 @@
+daun = 'what's    your          name    ?'
+
+def space_deleting(daun):
+    daun_lower = daun.lower()
+    lst_char1 = ''
+    lst_char2 = ''
+    i = 0
+
+    while i < len(daun):
+        lst_char2 = lst_char1
+        lst_char1 = string[i]
+
+        if lst_char1 == lst_char2 and lst_char1 == ' ':
+            daun = daun[:i] + daun[i+1:]
+        else:
+            i += 1
+
+    print(daun)
+    return daun
+space_deleting(daun)

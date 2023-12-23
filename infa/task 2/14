@@ -1,32 +1,12 @@
-def clay(string):
-    res = ''
-    array = []
-    array2 = []
-    i = 0
-    for char in string:
-        if char == ',':
-            array.append(res)
-            res = ''
-        elif char == ' ':
-            pass
-        else:
-            res = res + char
-        i += 1
+radius = float(input('wtite radius: '))
+height = float(input('write height: '))
+density = 54327
 
-    if res:
-        array.append(res)
+def calculate_mass(radius, height, density):
+    mass = density * radius**2 * height * 3.14
+    return mass
 
-    j = 0
-    while j < len(array):
-        array2.append(int(array[j]))
-        j += 1
+result = calculate_mass(radius, height, density)
+rounded = round(result, 2)
 
-    result = 1
-    i = 0
-    while i < len(array2):
-        result = result * array2[i]
-        i += 1
-
-    return result
-
-print(clay(765, 88, 13, 90, 67, 5'))
+print(f'The mass of water in the cylinder is {rounded} kilograms.')

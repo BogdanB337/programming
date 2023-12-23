@@ -12,8 +12,8 @@ player2 = input("Игрок 2 выбирает (R - камень, S - ножни
 result = determine_winner(player1, player2)
 
 if result == 0:
-    print("Ничья!")
+    print("draw!")
 elif result == 1:
-    print("Игрок 1 побеждает!")
+    print("player 1 wins!")
 else:
-    print("Игрок 2 побеждает!")
+    print("player 2 wins!")

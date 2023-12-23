@@ -1,0 +1,10 @@
+def biggest_dict(**kwargs):
+    my_dict = {"first_one": "we can do it"}
+
+    for key, value in kwargs.items():
+        if len(key) % 2 == 0:
+            my_dict[key] = value
+        else:
+            my_dict[value] = key
+
+    return my_dict

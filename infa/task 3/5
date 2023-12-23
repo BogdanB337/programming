@@ -11,4 +11,4 @@ def neibors(a):
     print(flag)
     return flag
 
-neibors('+87')
+neibors('+23')

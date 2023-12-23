@@ -1,0 +1,6 @@
+def change(lst):
+    if len(lst) >= 2:
+        lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+lst = [1234, 88, 8684974, 6]
+print(change(lst))
